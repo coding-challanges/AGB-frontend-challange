@@ -1,9 +1,9 @@
 {
     "Ownership" : [
         { "value" : null , "text" : "Select Ownership"},
-        { "value" : "Private" , "text" : "Private"},
-        { "value" : "State" , "text" : "State"},
-        { "value" : "Local Govt" , "text" : "Local Govt"}
+        { "value" : "PRIVATE" , "text" : "Private"},
+        { "value" : "STATE" , "text" : "State"},
+        { "value" : "LOCAL GOVT", "text" : "Local Govt"}
     ],
     "Suburb" : [
         { "value" : null , "text" : "Select Suburb"},
