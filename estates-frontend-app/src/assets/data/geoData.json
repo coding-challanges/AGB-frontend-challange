@@ -1,4 +1,5 @@
 {
+	"id": "dataId",
 	"type": "FeatureCollection",
 	"features": [{
 		"type": "Feature",

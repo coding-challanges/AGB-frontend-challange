@@ -9,15 +9,16 @@
     <MglGeojsonLayer
       type="fill"
       layerId="myLayer"
-      :sourceId="geojson.id"
-      :source="geojson"
+      :layer="geoJsonlayer"
+      :source="geoJson"
+      :sourceId="geoJson.data.id"
     />
   </MglMap>
   </div>
 </template>
 
 <script>
-import { Component, Prop, Vue } from "vue-property-decorator";
+// import { Component, Prop, Vue } from "vue-property-decorator";
 import Mapbox from "mapbox-gl";
 import { MglMap, MglGeojsonLayer } from "vue-mapbox";
 import geoData from "../assets/data/geoData.json";
@@ -33,7 +34,16 @@ export default  {
     return {
       accessToken: "pk.eyJ1IjoiampuYWQiLCJhIjoiY2tibTB6ZzBjMWI1czJycGYyMDloaHZ3eiJ9.IXe1E4jrDre_1zRtH-yGNA", // your access token. Needed if you using Mapbox maps
       mapStyle: "mapbox://styles/mapbox/light-v10", // your map style
-      geojson : geoData
+      geoJson : { 
+        type : "geojson",
+        data : geoData
+      },
+      geoJsonlayer : {
+        type: "circle",
+        paint: {
+          "circle-color": "#00ffff"
+        }
+      }
     };
   },
 
