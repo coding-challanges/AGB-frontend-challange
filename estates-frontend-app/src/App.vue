@@ -56,7 +56,6 @@ export default {
   methods: {
     updateGeoData(newGeoData){
       this.geoDataMap = newGeoData;
-      console.log("newGeoData", newGeoData);
     }
   }
 };

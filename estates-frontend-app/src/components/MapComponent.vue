@@ -32,7 +32,10 @@ export default  {
     return {
       accessToken: "pk.eyJ1IjoiampuYWQiLCJhIjoiY2tibTB6ZzBjMWI1czJycGYyMDloaHZ3eiJ9.IXe1E4jrDre_1zRtH-yGNA", // your access token. Needed if you using Mapbox maps
       mapStyle: "mapbox://styles/mapbox/streets-v11", // your map style
-      geoJson : {},
+      geoJson : { 
+        type : "geojson",
+        data : this.myGeoData
+      },
       geoJsonlayer : {
         type: "circle",
         paint: {
@@ -47,7 +50,6 @@ export default  {
         type : "geojson",
         data : this.myGeoData
       }
-      console.log("geoData at map trigered", this.myGeoData.features.length)
     }
   },
   created() {
