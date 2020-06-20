@@ -5,28 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />  
     <title><%= htmlWebpackPlugin.options.title %></title>
-    <script lang="ts">
-      import mapboxgl from 'mapbox-gl'; // or "const mapboxgl = require('mapbox-gl');"
-      
-      // TO MAKE THE MAP APPEAR YOU MUST
-      // ADD YOUR ACCESS TOKEN FROM
-      // https://account.mapbox.com
-      mapboxgl.accessToken = 'pk.eyJ1IjoiampuYWQiLCJhIjoiY2tibTB6ZzBjMWI1czJycGYyMDloaHZ3eiJ9.IXe1E4jrDre_1zRtH-yGNA';
-      const map = new mapboxgl.Map({
-      container: 'app',
-      style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
-      center: [-74.5, 40], // starting position [lng, lat]
-      zoom: 9 // starting zoom
-      });
-    </script>
   </head>
   <body>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
