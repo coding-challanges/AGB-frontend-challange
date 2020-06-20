@@ -1,10 +1,6 @@
 <template>
   <div id="map">
-    <MglMap
-    
-    :accessToken="accessToken"
-    :mapStyle="mapStyle"
-  >
+    <MglMap :accessToken="accessToken" :mapStyle="mapStyle">
     <!-- <MglMarker :coordinates.sync="markerCoordinates" color="green" /> -->
     <MglGeojsonLayer
       type="fill"
@@ -33,7 +29,7 @@ export default  {
   data() {
     return {
       accessToken: "pk.eyJ1IjoiampuYWQiLCJhIjoiY2tibTB6ZzBjMWI1czJycGYyMDloaHZ3eiJ9.IXe1E4jrDre_1zRtH-yGNA", // your access token. Needed if you using Mapbox maps
-      mapStyle: "mapbox://styles/mapbox/light-v10", // your map style
+      mapStyle: "mapbox://styles/mapbox/streets-v11", // your map style
       geoJson : { 
         type : "geojson",
         data : geoData
@@ -41,7 +37,7 @@ export default  {
       geoJsonlayer : {
         type: "circle",
         paint: {
-          "circle-color": "#00ffff"
+          "circle-color": "#2c3e50"
         }
       }
     };

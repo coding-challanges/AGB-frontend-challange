@@ -1,0 +1,35 @@
+{
+    "Ownership" : [
+        { "value" : null , "text" : "Select Ownership"},
+        { "value" : "Private" , "text" : "Private"},
+        { "value" : "State" , "text" : "State"},
+        { "value" : "Local Govt" , "text" : "Local Govt"}
+    ],
+    "Suburb" : [
+        { "value" : null , "text" : "Select Suburb"},
+        { "value" : "SYDNEY" , "text" : "SYDNEY"},
+        { "value" : "LISMORE" , "text" : "LISMORE"},
+        { "value" : "ASHFIELD" , "text" : "ASHFIELD"},
+        { "value" : "PYRMONT" , "text" : "PYRMONT"},
+        { "value" : "SYDNEY SOUTH" , "text" : "SYDNEY SOUTH"},
+        { "value" : "DARLING HARBOUR" , "text" : "DARLING HARBOUR"},
+        { "value" : "CIRCULAR QUAY" , "text" : "CIRCULAR QUAY"},
+        { "value" : "HAYMARKET" , "text" : "HAYMARKET"},
+        { "value" : "PARRAMATTA" , "text" : "PARRAMATTA"},
+        { "value" : "NORTH SYDNEY" , "text" : "NORTH SYDNEY"},
+        { "value" : "WINDSOR" , "text" : "WINDSOR"},
+        { "value" : "MOONEE BEACH" , "text" : "MOONEE BEACH"},
+        { "value" : "CONCORD REPATRIATION HOSPITAL" , "text" : "CONCORD REPATRIATION HOSPITAL"}        
+    ],
+    "Council" : [
+        { "value" : null , "text" : "Select Council"},
+        { "value" : "SYDNEY" , "text" : "SYDNEY"},
+        { "value" : "LISMORE" , "text" : "LISMORE"},
+        { "value" : "ASHFIELD" , "text" : "ASHFIELD"},
+        { "value" : "PARRAMATTA" , "text" : "PARRAMATTA"},
+        { "value" : "NORTH SYDNEY" , "text" : "NORTH SYDNEY"},
+        { "value" : "HAWKESBURY" , "text" : "HAWKESBURY"},
+        { "value" : "COFFS HARBOUR" , "text" : "COFFS HARBOUR"},
+        { "value" : "CANADA BAY" , "text" : "CANADA BAY"}
+    ]
+}
